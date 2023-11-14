@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>UykusuzKodlama Sayaç Uygulaması</h2>
+  <p class="counter">
+    {{counter}}
+  </p>
+  <button (click)="increaseCounter()">Increase</button>
+  <button (click)="decreaseCounter()">Decrease</button>
+  <button *ngIf="counter!==0" (click)="resetCounter()">Reset</button>
+</div>

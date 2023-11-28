@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-material';
+  loader: boolean = false;
+
+
+  getFakeData() {
+    this.loader = true;
+    setTimeout(() => {
+      this.loader = false;
+    }, 500);
+
+  }
+
+
+
+
 }

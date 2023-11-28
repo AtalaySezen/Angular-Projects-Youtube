@@ -11,6 +11,9 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
-<div class="container">
-  <button mat-raised-button color="primary">Get Data</button>
+<div class="container" *ngIf="!loader">
+  <button mat-raised-button color="accent" (click)="getFakeData()">Get Fake Data</button>
+</div>
+<div class="container" *ngIf="loader">
+  <mat-spinner></mat-spinner>
 </div>
